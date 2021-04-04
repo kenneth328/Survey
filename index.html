@@ -1,0 +1,154 @@
+
+<div id="main">
+    <title>Dota 2</title>
+    <link rel="stylesheet" href="style.css">
+<div class="header-info">
+  <div id="headers">
+    <h1 id="title">A survey about:</h1>
+    <p id="description">Thank you for taking part in this survey, to begin with can you tell us a little bit about yourself?</p>
+  </div>
+  <div>
+    <img id="survey-img" src="https://i.pinimg.com/originals/8a/8b/50/8a8b50da2bc4afa933718061fe291520.jpg" alt="Dota 2 logo">
+  </div>
+</div>
+<!--SURVEY-->
+<form id="survey-form">
+<!--PERSONAL INFO-->
+  <div class="form-group">
+    <label id="name-label"
+           for="name"><strong>What&apos;s your name</strong></label>
+    <input id="name"
+           type="text"
+           class="textfield-form"
+           placeholder="Your name"
+           required
+           />
+  </div>
+  <div class="form-group">
+    <label id="email-label"
+           for="email"><strong>What&apos;s your email</strong></label>
+    <input id="email"
+           type="text"
+           class="textfield-form"
+           placeholder="Your email"
+           required
+           />
+  </div>
+  <div class="form-group">
+    <label id="number-label"
+           for="age"><strong>What&apos;s your age (Optional)</strong></label>
+    <input id="age"
+           type="number"
+           min="8"
+           max="99"
+           class="textfield-form"
+           placeholder="Your age"
+           />
+  </div>
+  <div class="form-group">
+    <label for="servers" id="server-label"><strong>On which server do you play:</strong></label>
+  <select name="servers" id="dropdown" class="textfield-form">
+    <option value="NA">NA</option>
+    <option value="LAN">LAN</option>
+    <option value="LAS">LAS</option>
+    <option value="EUW">EUW</option>
+    <option value="EUNE">EUNE</option>
+    <option value="KR">KR</option>
+    <option value="OCE">OCE</option>
+    <option value="JP">JP</option>
+    <option value="TU">TU</option>
+    <option value="RU">RU</option>
+    <option value="BR">BR</option>
+  </select>
+  </div>
+  <div class="form-group">
+    <p><strong>What do you consider to be your main line?</strong></p>
+    <label>
+      <input type="radio"
+             value="top"
+             name="main-lane"
+             class="radio-input"/>POSITION 1 (HARD CARRY)
+    </label>
+    <label>
+      <input type="radio"
+             value="jungle"
+             name="main-lane"
+             class="radio-input"/>POSITION 2 (GANKER)
+    </label>
+    <label>
+      <input type="radio"
+             value="mid"
+             name="main-lane"
+             class="radio-input"/>POSITION 3 (OFFLANER)
+    </label>
+    <label>
+      <input type="radio"
+             value="adc"
+             name="main-lane"
+             class="radio-input"/>POSITION 4 (ROAMING SUPPORT)
+    </label>
+    <label>
+      <input type="radio"
+             value="supp"
+             name="main-lane"
+             class="radio-input"/>POSITION 5 (HARD SUPPORT)
+    </label>
+  </div>
+  <div class="form-group">
+    <p><strong>What is your favorite champion in your main line?</strong></p>
+    <label for="favorite-champ">
+      <input type="text"
+             name="favorite-champ"
+             class="textfield-form"
+             placeholder="Enter your favorite champ here"
+    </label>
+  </div>
+    <div class="form-group">
+      <p><strong>What would you like to see improved from your favorite Hero?</strong></p>
+      <label>
+        <input type="checkbox"
+               name="user-recommedation"
+               value="full-reword"
+               class="input-checkbox"/>Full Rework
+      </label>
+      <label>
+        <input type="checkbox"
+               name="user-recommedation"
+               value="habilities-rework"
+               class="input-checkbox"/>Habilities Rework
+      </label>
+      <label>
+        <input type="checkbox"
+               name="user-recommedation"
+               value="visual-rework"
+               class="input-checkbox"/>Visual Rework
+      </label>
+      <label>
+        <input type="checkbox"
+               name="user-recommedation"
+               value="buff"
+               class="input-checkbox"/>Buff
+      </label>
+      <label>
+        <input type="checkbox"
+               name="user-recommedation"
+               value="more-skins"
+               class="input-checkbox"/>More Skins
+      </label>
+    </div>
+    <div class="form-group">
+      <p><strong>What would be your idea for a next Hero?</strong></p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your idea here..."
+      ></textarea>
+    </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+</form>
+  </div>
